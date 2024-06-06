@@ -8,6 +8,7 @@ metadata:
       #[{"field":"http-header","httpHeaderConfig":{"httpHeaderName": "Content-Type", "values":["application/grpc"]}}]
     #alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
     alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/group.name: demo
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-west-2:134722888269:certificate/a808d8eb-a5e3-4615-a6a5-61dc3eab5d32  # Add your certificate ARN here
       #kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/target-type: ip
